@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+
+body{
+    background-color: #DED0B6;
+}
+#headcity{
+    position: absolute;
+    width: 100%;
+}
+#returnToTop {
+    position: absolute;
+color: #fff;
+    padding: 12px;
+    width: 100%;
+    /* box-shadow: 3px 3px 3px 3px #555; */
+text-align: center;}
+
+#myMap {
+    top: 130px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    width: 1800px;
+    height: 900px;
+    z-index: 1;
+}
+#menu {
+    top: 150px;
+    position: absolute;
+    background-color: #FDF7E4;
+    height: 1100px;
+    width: 500px;
+    margin-left: calc(50% - 70vw);
+    transition: margin-left 0.5s ease;
+    /*ゆっくり左から出す*/
+    box-shadow: 3px 3px 3px 3px #555;
+    z-index: 2;
+    border-radius: 5px; /* 角丸 */
+}
+/* ボタンクリックすると左から出てくる */
+#menu.menu-opened {
+    position: absolute;
+    background-color: #FDF7E4;
+    /* overflow-y: scroll; */
+    height: 1100px;
+    width: 500px;
+    margin-left: initial;
+}
+#direction {
+    bottom: -1000px;
+    position: fixed;
+    right: 20px;
+    height: 100%;
+    width: 400px;
+    background-color: #FDF7E4;
+    margin-bottom: calc(50% - 100vw); 
+    transition: bottom 3s ease;
+    z-index: 3;
+
+}
+/* ボタンクリックすると右から出てくる */
+#direction.direction-opened {
+    /* margin: 10px 30px auto auto; */
+    bottom: 1000px;
+}
+
+#menubtn {
+    position: right;
+    margin: 15px 15px auto auto;
+    float: right;
+    width: 30px;
+    border-radius: 50%;
+    /* 丸い形にするための border-radius */
+    box-shadow: 3px 3px 3px 3px #555;
+}
+
+#newinfo {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 400px;
+    /* height: 300px; */
+    background-color: #FAEED1;
+    padding: 10px 5px 5px 5px;
+    border-bottom: 1px solid #757575;
+}
+
+#kousinbox {
+    margin-left: 30px;
+    width: 400px;
+    background-color: #FAEED1;
+    padding: 10px 5px 5px 5px;
+    border-top: 1px solid #757575;
+    border-bottom: 1px solid #757575;
+}
+
+#output {
+    margin-left: 30px;
+    width: 400px;
+    height: 500px;
+    background-color: #FAEED1;
+    padding: 10px 5px 5px 5px;
+    overflow-y: scroll;
+
+}
+#routearea{
+    width: 650px;
+    position: relative;
+    top: 80px;
+    height: 50px;
+    background-color: #DED0B6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 3px 3px 3px 3px #555;
+    z-index: 3;
+    border-radius: 5px; /* 角丸 */
+
+}
+
+#routearea input, #routearea select, #routearea button {
+    margin: 0 5px; 
+}
+.input {
+    margin: 5px 5px 5px 5px;
+    font-weight: 900;
+}
+
+.ichiran {
+    font-weight: 900;
+    width: 380px;
+    margin: 5px 5px 5px 35px;
+}
+
+#geocode,
+#regeocode,
+#rekey {
+    width: 350px;
+    background-color: #fff;
+}
+
+.space15 {
+    height: 15px;
+}
+
+.space10 {
+    height: 10px;
+}
+
+#description,
+#redescription {
+    height: 40px;
+}
+
+.address {
+    font-size: 80%;
+    width: 380px;
+}
+
+.pintable {
+    border-top: 1px solid #757575;
+    border-bottom: 1px solid #757575;
+}
+
+.pt {
+    width: 50px;
+    margin: 3px 0 3px 0;
+}
+
+td {
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.titlewidth {
+    width: 40%;
+}
+
+.pincolorwidth {
+    width: 40%;
+}
+
+p {
+    margin: 0;
+}
